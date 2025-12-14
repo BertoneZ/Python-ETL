@@ -1,0 +1,14 @@
+id,producto,precio,cantidad
+1, Teclado , 25.50, 10
+2, Mouse, 10.00, 
+3, Monitor, 150.00, 5
+4, , 0, 0
+5, Auriculares, 40.00, 2
+6, Parlante, 25.50, 8
+7, Torre, 10.00, 15
+8, Ram, 150.00, 3
+9, LucesLed, , 4
+10, MousePad, 25.50, 12
+11, MouseInalambrico, 10.00, 7
+12, SillaGamer, 150.00, 6
+13, Impresora, 40.00, 1
