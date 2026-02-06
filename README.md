@@ -4,6 +4,8 @@ Este proyecto implementa un proceso **ETL (Extract, Transform, Load)** automatiz
 
 ## 📋 Descripción Técnica
 El script toma datos crudos de ventas, los procesa para asegurar su calidad y los almacena en una base de datos relacional para su análisis posterior.
+#Configuración del Data Warehouse y Schema SQL
+<img width="455" height="319" alt="image" src="https://github.com/user-attachments/assets/f9df40a3-2211-4801-9184-83cfffafb5ad" />
 
 * **Extract:** Lectura de archivos planos (`.csv`).
 * **Transform:**
