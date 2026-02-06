@@ -11,9 +11,10 @@ El script toma datos crudos de ventas, los procesa para asegurar su calidad y lo
 
 ## Descripción 
 En esta etapa se establece la conexión con la base de datos SQLite y se automatiza la creación de la tabla. El uso de DROP TABLE IF EXISTS asegura que el entorno de datos se reinicie correctamente en cada ejecución, garantizando la integridad del esquema.
+
 # Transformación y Calidad de Datos
 
-<img width="649" height="472" alt="image" src="https://github.com/user-attachments/assets/ee692cbd-8557-4499-885f-f71bfa675344" />
+<img width="679" height="484" alt="image" src="https://github.com/user-attachments/assets/60c27d66-ff4e-4bce-9206-34a3cd3eb0f0" />
 
 ## Descripción 
 Aquí es donde ocurre la "magia" del ETL. El script recorre los datos crudos del CSV, elimina espacios innecesarios y valida que los tipos de datos sean correctos. Implementé un manejo de excepciones (try/except) para filtrar registros corruptos o incompletos, asegurando que solo información de calidad llegue al destino
@@ -21,7 +22,9 @@ Aquí es donde ocurre la "magia" del ETL. El script recorre los datos crudos del
  
 # Carga Masiva y Reportabilidad
 
-<img width="836" height="494" alt="image" src="https://github.com/user-attachments/assets/d7c2d6ea-022b-442a-8cf1-d98e57019db0" />
+<img width="883" height="502" alt="image" src="https://github.com/user-attachments/assets/6b25cef9-e136-4307-84c8-968586497cb1" />
+
+
 
 ## Descripción 
 
