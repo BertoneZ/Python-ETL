@@ -7,6 +7,7 @@ El script toma datos crudos de ventas, los procesa para asegurar su calidad y lo
 # Configuración del Data Warehouse y Schema SQL
 
 <img width="455" height="319" alt="image" src="https://github.com/user-attachments/assets/f9df40a3-2211-4801-9184-83cfffafb5ad" />
+
 ## Descripción 
 En esta etapa se establece la conexión con la base de datos SQLite y se automatiza la creación de la tabla. El uso de DROP TABLE IF EXISTS asegura que el entorno de datos se reinicie correctamente en cada ejecución, garantizando la integridad del esquema.
 # Transformación y Calidad de Datos
