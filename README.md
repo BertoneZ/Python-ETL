@@ -4,6 +4,7 @@ Este proyecto implementa un proceso **ETL (Extract, Transform, Load)** automatiz
 
 ## 📋 Descripción Técnica
 El script toma datos crudos de ventas, los procesa para asegurar su calidad y los almacena en una base de datos relacional para su análisis posterior.
+
 # Configuración del Data Warehouse y Schema SQL
 
 <img width="463" height="339" alt="image" src="https://github.com/user-attachments/assets/3f24bbb8-26f4-43c0-9ed9-6cb487894a75" />
@@ -22,7 +23,9 @@ Aquí es donde ocurre la "magia" del ETL. El script recorre los datos crudos del
  
 # Carga Masiva y Reportabilidad
 
-<img width="883" height="502" alt="image" src="https://github.com/user-attachments/assets/6b25cef9-e136-4307-84c8-968586497cb1" />
+
+<img width="939" height="512" alt="image" src="https://github.com/user-attachments/assets/9a762693-8ee6-4a81-82a3-165d23316271" />
+
 
 
 
