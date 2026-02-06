@@ -27,9 +27,6 @@ Aquí es donde ocurre la "magia" del ETL. El script recorre los datos crudos del
 
 Los datos ya limpios se insertan de forma masiva en SQL mediante executemany para optimizar el rendimiento. Finalmente, se realiza una consulta filtrada para extraer los registros de mayor valor y exportarlos automáticamente a un reporte CSV listo para el análisis de negocio.
 
-# Reporting
-Generación automática de un archivo `.csv` con las ventas filtradas por criterio de negocio (Monto > $110000).
-
 ## 🛠 Tecnologías
 * **Lenguaje:** Python 3.x
 * **Base de Datos:** SQLite
