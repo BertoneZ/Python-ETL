@@ -5,13 +5,33 @@ Este proyecto implementa un proceso **ETL (Extract, Transform, Load)** automatiz
 ## 📋 Descripción Técnica
 El script toma datos crudos de ventas, los procesa para asegurar su calidad y los almacena en una base de datos relacional para su análisis posterior.
 
-* **Extract:** Lectura de archivos planos (`.csv`).
-* **Transform:**
-    * Limpieza de datos (strings vacíos, espacios extra).
-    * Validación de tipos de datos y manejo de errores (`try-except`) para evitar interrupciones.
-    * Cálculo de métricas derivadas (Total de Venta).
-* **Load:** Inserción masiva y eficiente en **SQLite** utilizando transacciones (`executemany`).
-* **Reporting:** Generación automática de un archivo `.csv` con las ventas filtradas por criterio de negocio (Monto > $200).
+# Configuración del Data Warehouse y Schema SQL
+
+<img width="463" height="339" alt="image" src="https://github.com/user-attachments/assets/3f24bbb8-26f4-43c0-9ed9-6cb487894a75" />
+
+
+## Descripción 
+En esta etapa se establece la conexión con la base de datos SQLite y se automatiza la creación de la tabla. El uso de DROP TABLE IF EXISTS asegura que el entorno de datos se reinicie correctamente en cada ejecución, garantizando la integridad del esquema.
+
+# Transformación y Calidad de Datos
+
+<img width="679" height="484" alt="image" src="https://github.com/user-attachments/assets/60c27d66-ff4e-4bce-9206-34a3cd3eb0f0" />
+
+## Descripción 
+Aquí es donde ocurre la "magia" del ETL. El script recorre los datos crudos del CSV, elimina espacios innecesarios y valida que los tipos de datos sean correctos. Implementé un manejo de excepciones (try/except) para filtrar registros corruptos o incompletos, asegurando que solo información de calidad llegue al destino
+
+ 
+# Carga Masiva y Reportabilidad
+
+
+<img width="939" height="512" alt="image" src="https://github.com/user-attachments/assets/9a762693-8ee6-4a81-82a3-165d23316271" />
+
+
+
+
+## Descripción 
+
+Los datos ya limpios se insertan de forma masiva en SQL mediante executemany para optimizar el rendimiento. Finalmente, se realiza una consulta filtrada para extraer los registros de mayor valor y exportarlos automáticamente a un reporte CSV listo para el análisis de negocio.
 
 ## 🛠 Tecnologías
 * **Lenguaje:** Python 3.x
