@@ -48,8 +48,8 @@ def proceso_etl():
     else:
         print("No se procesaron datos.")
 
-    print("\n--- PRODUCTOS MAYORES A $200 ---")
-    cursor.execute("SELECT * FROM ventas_limpias WHERE total_venta > 200")
+    print("\n--- VENTAS MAYORES A $110000 ---")
+    cursor.execute("SELECT * FROM ventas_limpias WHERE total_venta > 110000")
     resultados = cursor.fetchall()
 
     for producto in resultados:
